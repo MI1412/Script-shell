@@ -1,0 +1,233 @@
+
+
+# Enable the subsequent settings only in interactive sessions
+case $- in
+  *i*) ;;
+    *) return;;
+esac
+
+# Path to your oh-my-bash installation.
+export OSH='/c/Users/DELL/.oh-my-bash'
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-bash is loaded.
+OSH_THEME="robbyrussell"
+
+# If you set OSH_THEME to "random", you can ignore themes you don't like.
+# OMB_THEME_RANDOM_IGNORED=("powerbash10k" "wanelo")
+
+# Uncomment the following line to use case-sensitive completion.
+# OMB_CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# OMB_HYPHEN_SENSITIVE="false"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_OSH_DAYS=13
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you don't want the repository to be considered dirty
+# if there are untracked files.
+# SCM_GIT_DISABLE_UNTRACKED_DIRTY="true"
+
+# Uncomment the following line if you want to completely ignore the presence
+# of untracked files in the repository.
+# SCM_GIT_IGNORE_UNTRACKED="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.  One of the following values can
+# be used to specify the timestamp format.
+# * 'mm/dd/yyyy'     # mm/dd/yyyy + time
+# * 'dd.mm.yyyy'     # dd.mm.yyyy + time
+# * 'yyyy-mm-dd'     # yyyy-mm-dd + time
+# * '[mm/dd/yyyy]'   # [mm/dd/yyyy] + [time] with colors
+# * '[dd.mm.yyyy]'   # [dd.mm.yyyy] + [time] with colors
+# * '[yyyy-mm-dd]'   # [yyyy-mm-dd] + [time] with colors
+# If not set, the default value is 'yyyy-mm-dd'.
+# HIST_STAMPS='yyyy-mm-dd'
+
+# Uncomment the following line if you do not want OMB to overwrite the existing
+# aliases by the default OMB aliases defined in lib/*.sh
+# OMB_DEFAULT_ALIASES="check"
+
+# Would you like to use another custom folder than $OSH/custom?
+# OSH_CUSTOM=/path/to/new-custom-folder
+
+# To disable the uses of "sudo" by oh-my-bash, please set "false" to
+# this variable.  The default behavior for the empty value is "true".
+OMB_USE_SUDO=true
+
+# To enable/disable display of Python virtualenv and condaenv
+# OMB_PROMPT_SHOW_PYTHON_VENV=true  # enable
+# OMB_PROMPT_SHOW_PYTHON_VENV=false # disable
+
+# Which completions would you like to load? (completions can be found in ~/.oh-my-bash/completions/*)
+# Custom completions may be added to ~/.oh-my-bash/custom/completions/
+# Example format: completions=(ssh git bundler gem pip pip3)
+# Add wisely, as too many completions slow down shell startup.
+completions=(
+  git
+  composer
+  ssh
+)
+
+# Which aliases would you like to load? (aliases can be found in ~/.oh-my-bash/aliases/*)
+# Custom aliases may be added to ~/.oh-my-bash/custom/aliases/
+# Example format: aliases=(vagrant composer git-avh)
+# Add wisely, as too many aliases slow down shell startup.
+aliases=(
+  general
+)
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-bash/plugins/*)
+# Custom plugins may be added to ~/.oh-my-bash/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  git
+  bashmarks
+)
+
+# Which plugins would you like to conditionally load? (plugins can be found in ~/.oh-my-bash/plugins/*)
+# Custom plugins may be added to ~/.oh-my-bash/custom/plugins/
+# Example format:
+#  if [ "$DISPLAY" ] || [ "$SSH" ]; then
+#      plugins+=(tmux-autoattach)
+#  fi
+
+source "$OSH"/oh-my-bash.sh
+
+# User configuration
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# Set personal aliases, overriding those provided by oh-my-bash libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-bash
+# users are encouraged to define aliases within the OSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias bashconfig="mate ~/.bashrc"
+# alias ohmybash="mate ~/.oh-my-bash"
+
+alias konvert="ffmpeg -i"
+alias mk="mkdir"
+alias co.="code ."
+alias co="code"
+alias s="start"
+alias t="touch"
+alias ipy="ipython"
+alias e-bash="note ~/.bashrc"
+alias note="notepad"
+alias opera="start opera"
+alias music="vlc Music/playlist/" #jalankan di ~/
+alias cp-proj="cp ~/filebash/project.bash ."
+alias term:py="ipython"
+alias progress="sh /e/my-note/progress.bash"
+alias e-progress="note /e/my-note/progress.bash"
+alias exe="source ~/.bashrc"
+alias backup="cp ~/.bashrc /d/Pembelajaran/file_sh/.zshrc/backup_bash.txt"
+alias proj="sh project.bash"
+alias e-proj="note project.bash"
+alias cl="clear"
+alias yt-dlp:list="yt-dlp -f \"bv*+ba/b\" -o \"%(playlist_title)s/%(title)s.%(ext)s\" --merge-output-format mp4yt-dlp -f \"bv*+ba/b\" -o\"%(playlist_title)s/%(title)s.%(ext)s\" --merge-output-format mp4"
+alias yt-dlp:video="yt-dlp -f bestvideo+bestaudio --merge-output-format mp4"
+alias yt-dlp:audio="yt-dlp -f bestaudio --extract-audio --audio format mp3 --audio-quality 0"
+alias e-run="note ~/run.bash"
+alias e-git="note ~/git.bash"
+alias e-tools="note ~/tools.bash"
+alias e-rd="note ~/redirect.bash"
+alias ollama-create=". ~/ollama-create.bash"
+alias ollama-run=". ~/ollama-run.bash"
+alias ollama-list="ollama list"
+alias rembg="rembg -i"
+
+#pyenv & python
+alias flask-run=". ~/filebash/flask.bash"
+alias activate=". ~/filebash/activate.bash"
+alias install-pkg="pip install -r"
+alias py-version="python --version"
+alias venv=". ~/filebash/venv.bash"
+alias pyenv-install="pyenv install"
+alias pyenv-uninstall="pyenv uninstall"
+alias pyenv-global="pyenv global"
+
+#menampilkan dokumentasi
+alias v-run="sh ~/filebash/run.bash"
+alias v-tools="sh ~/filebash/tools.bash"
+alias v-rd="sh ~/filebash/redirect.bash"
+alias v-git="sh ~/filebash/git.bash"
+alias v-py="sh ~/filebash/python.bash"
+
+#next buat tools yang bisa mengambil argumen dari terminal dan disimpan ke .zshrc
+
+#running localhost
+alias run:80="php -S localhost:8080"
+alias run:30="php -S localhost:3060"
+
+#redirect
+alias tobar="cd /e/rsc_tobar"
+alias cmdlinux="cd /d/cmdLinux"
+alias belajar="cd /d/Pembelajaran/"
+alias c-proj="cd /d/Projects"
+alias get-link="cd /d/get-link"
+alias js-learn="cd /d/Pembelajaran/Js-learning"
+alias my-note="cd /e/my-note"
+alias py-dev="/d/Pembelajaran/py_dev"
+alias cbs="cd /c/Windows/Logs/CBS"
+alias snip="cd /c/Users/DELL/AppData/Roaming/Code/User/snippets"
+alias repos="cd /d/repos"
+alias materi="cd /e/Materi-FullStack/"
+alias list-py="cd /d//laragon/bin/python/python-3.10/"
+
+#Git
+alias clone="git clone"
+alias up-repo:done="git add . && git commit -m "done" || git push"
+alias get-repo="git pull && git fetch"
+alias commit="git commit"
+alias commit-am="git commit -am"
+alias add="git add"
+alias fetch="git fetch && cl"
+alias remote-v="git remote -v"
+alias remote="git remote"
+alias init="git init"
+alias pull="git pull && cl"
+alias log="git log --oneline"
+alias status="git status"
+alias push="git push && cl"
+alias commit-done="git commit -am "DONE" && git push"
