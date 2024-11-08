@@ -22,9 +22,9 @@ echo ""
 
 echo "--- buid tools ---"
 # build tools
-echo ""
 echo "pasang peps di lokal"
-# delay: echo "ngulik home server dan coba ddos web server sendiri"
+echo "issue: perbaiki path yang error file_sh"
+echo "delay: ngulik home server dan coba ddos web server sendiri"
 echo ""
 
 # tambahan
@@ -43,5 +43,6 @@ echo ""
 # project
 echo "--- project ---"
 echo "backup semua kode dalam satu repo"
+echo "buat kode editor di hp pakai python"
 echo "buat aplikasi notif / pengingat dengan python"
 echo ""
