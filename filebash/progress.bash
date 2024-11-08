@@ -22,6 +22,7 @@ echo ""
 
 echo "--- buid tools ---"
 # build tools
+echo "buat tools untuk automasi git selengkapnya di my-note/automasi_git.txt"
 echo "pasang peps di lokal"
 echo "issue: perbaiki path yang error file_sh"
 echo "delay: ngulik home server dan coba ddos web server sendiri"
