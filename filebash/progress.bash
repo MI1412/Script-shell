@@ -13,12 +13,14 @@ echo ""
 
 echo "--- saran ---"
 # lanjut setelah relasi class echo "cara melihat lokasi objek di memori python dan belajar callback"
+echo "semua codingan jadikan dalam satu repo kemudian buat dokumentasi"
+echo "perbaiki backup di e-bash"
 #echo "kalau mau memahami file handling pelajari algoritma file handling"
 echo "sampai mengoleksi catatan (add_notes) exceptions"
 # delay: echo "pelajari object di python"
 echo ""
 
-echo "buid tools"
+echo "--- buid tools ---"
 # build tools
 echo ""
 echo "pasang peps di lokal"
@@ -40,5 +42,6 @@ echo ""
 
 # project
 echo "--- project ---"
+echo "backup semua kode dalam satu repo"
 echo "buat aplikasi notif / pengingat dengan python"
 echo ""
