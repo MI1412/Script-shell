@@ -40,9 +40,12 @@ echo ""
 
 # backup
 #/d/File Gambar, video, Dokumen, DLL
+# backup E:\file video, E:\gambar\video umi, D:\Audio Bonus, D:\hp umi, D:\pelatihan, D:\Suara PPT, D:\video wa
+# rapikan : D:\redmi4x, D:\software tools
 
 # project
 echo "--- project ---"
+echo "buat log otomatis jika memasukkan file ke komputer"
 echo "backup semua kode dalam satu repo"
 echo "buat kode editor di hp pakai python"
 echo "buat aplikasi notif / pengingat dengan python"
