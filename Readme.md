@@ -1,3 +1,3 @@
 # Script Shell
 
-## Berisi script Shell untuk otomasi kode lokal
+## Berisi script Shell untuk otomasi kode
