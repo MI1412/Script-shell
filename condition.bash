@@ -1,7 +1,17 @@
 #!/bin/bash
-folder="tes"
-if [ -d "$folder" ]; then
-	echo "folder '$folder' ditemukan"
-else
-	echo "folder '$folder' tidak ada"
+
+# Periksa argumen --help
+if [[ $1 == "--help" ]]; then
+    echo "Penggunaan: ./script.bash [opsi]"
+    echo "Opsi:"
+    echo "  --help       Menampilkan bantuan ini."
+    echo "  --version    Menampilkan versi script."
 fi
+
+# Periksa argumen --version
+if [[ $1 == "--version" ]]; then
+    echo "Script Versi 1.0.0"
+fi
+
+# Tambahkan logika lainnya di sini
+echo "Script dijalankan tanpa opsi tertentu."
